@@ -1,21 +1,30 @@
 <?php
 
-class Kar {
-    public $brand ;
-    private $milage;
+class Kar
+{
+    public $brand;
+    public $mileage;
+    static $describe = "Masinam ir cetras durvis bet retos gadijumos tas cigani aizmetina";
 
-    public function __construct($b, $m){
-        $this->brand = $b;
-        $this->milage = $m;
+    
+
+    function __construct($brand = "", $mileage = 0)
+    {
+        $this->brand = $brand;
+        $this->mileage = $mileage;
     }
-
-    public function __destruct(){
-        echo $this->brand . "is dead at mileage". milage;
+    function __destruct()
+    {
+        echo $this->brand . " is dead at mileage " . $this->mileage . "Km" . "<br>";
     }
-
-    public function __increaseMileage($amount){
-        echo 
+    function increaseMileage($amount)
+    {
+        $this->mileage = $this->mileage += $amount;
+    }
+    static function makeNoise() {
+        return "Beep, Beep!";
     }
 }
+
 
 ?>
