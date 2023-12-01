@@ -1,12 +1,10 @@
 <?php
 
-class Kar
-{
-    public $brand;
-    public $mileage;
-    static $describe = "Masinam ir cetras durvis bet retos gadijumos tas cigani aizmetina";
+include_once "Vehicle.php";
 
-    
+class Kar extends Vehicle
+    {
+    static $describe = "i have 4 wheels, but sometimes 3";
 
     function __construct($brand = "", $mileage = 0)
     {
@@ -21,7 +19,7 @@ class Kar
     {
         $this->mileage = $this->mileage += $amount;
     }
-    static function makeNoise() {
+    static function makeNoice() {
         return "Beep, Beep!";
     }
 }

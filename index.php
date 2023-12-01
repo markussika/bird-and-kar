@@ -1,19 +1,23 @@
 <?php
-include "Bird.php";
+
 include "Kar.php";
-include "Tire.php";
+
 include "Train.php";
-$bird1 = new Bird("Railijs", 14);
-echo $bird1->name ."<br>";
 
-$bird2 = new Bird("matuIIIIIsssss", 18);
-echo $bird2->name ."<br><br> ";
-$bird2->fly();
+// $bird1 = new Bird("Railijs", 14);
+// echo $bird1->name ."<br>";
 
-$tire = new Tire("20 cm radius" , "michelin", "loti slikta");
+// $bird2 = new Bird("matuIIIIIsssss", 18);
+// echo $bird2->name ."<br><br> ";
+// $bird2->fly();
 
-echo $tire->size ."<br>";
-echo $tire->type ."<br><br> ";
+// $tire = new Tire("20 cm radius" , "michelin", "loti slikta");
+
+// echo $tire->size ."<br>";
+// echo $tire->type ."<br><br> ";
+// Train::makeNoise();
+
+$myCar = new Kar("bmw", 0.01);
 
 
 
@@ -39,19 +43,19 @@ echo $tire->type ."<br><br> ";
 // No mūsu pielijušās vasaras <br> <br>";
 
 
-$kar1 = New Kar("Bmw", 0);
-$kar2 = New Kar("Opel", 1000000001);
-$kar1->increaseMileage(240);
-echo Kar::$describe;
-echo "<br>";
-echo Kar::makeNoise() . "<br><br>";
+// $kar1 = New Kar("Bmw", 0);
+// $kar2 = New Kar("Opel", 1000000001);
+// $kar1->increaseMileage(240);
+// echo Kar::$describe;
+// echo "<br>";
+// echo Kar::makeNoise() . "<br><br>";
 
-$train1 = New Train("avdi", "es nezinu", 6736824);
-$train2 = New Train("volvo","es nezinu", 1000000001);
-$train1->increaseMileage(240);
+// $train1 = New Train("avdi", "es nezinu", 6736824);
+// $train2 = New Train("volvo","es nezinu", 1000000001);
+// $train1->increaseMileage(240);
 
-echo "<br>";
-echo Train::makeNoise() . "<br><br>";
+// echo "<br>";
+// echo Train::makeNoise() . "<br><br>";
 
 
 
