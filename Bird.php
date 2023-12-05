@@ -1,22 +1,32 @@
 <?php
 
-class Bird {
+class Bird
+{
     public $name;
-    private $age;
+    public $acis;
+    public $kajas;
+    public $rokas;  
+    private $flyorno;
 
-    public function __construct($n, $a){
-        $this->name = $n;
-        $this->age = $a;
+    function __construct($name = "", $acis = 0, $kajas = 0, $rokas = 0, $flyorno = "nelidos")
+    {
+        $this->name = $name;
+        $this->acis = $acis;
+        $this->kajas = $kajas;
+        $this->rokas = $rokas;
+        $this->flyorno = $flyorno;
     }
-
-    public function __destruct(){
-        echo $this->name . " parvertas par negeri un nomira ☠️" . "<br>";
+    function __destruct()
+    {
+        echo $this->name . " is dead. LMAO BOZO💀" . "<br>";
     }
-    public function fly(){
-        echo "fly high🕊️". $this->name;
+    public function setflyorno($value)
+    {
+        return $this->flyorno = $value;
+    }
+    public function getflyorno()
+    {
+        return $this->flyorno;
     }
 }
-
-
-?>
 
